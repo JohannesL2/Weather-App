@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+<div
+      class="bg-image d-flex justify-content-center align-items-center"
+      style="
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+        overflow: hidden;
+      "
+    >
+      <div class="container shadow" style="width: 400px;">
+        <div class="row justify-content-center">
+          <h1
+            class="display-5 text-center text-white text-decoration-underline"
+            style="margin: 0;"
+          >
+            Weather App
+          </h1>
+          <div class="navbar navbar-expand">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+          <div class="row text-white h3">
+            <input
+            class="input-group-text"
+            type="text"
+            placeholder="Choose weather location"
+            id="locationInput"
+          />
+          <div class="container shadow">
+            <div class="row">
+              <div class="col">
+            <img
+              class="col weather-icon img-fluid"
+              style="width: 50%;
+              padding-left: 15%;
+              padding-top: 10%;
+              "
+              src=""
+              alt=""
+            />
+              </div>
+              <div class="col">
+            <p class="col" style="padding-top: 15%;" id="temperature"></p>
+          </div>
+          <div class="w-100"></div>
+            <div class="col">
+            <p class="col" id="location"></p>
+          </div>
+            <div class="col">
+            <p class="col" id="description"></p>
+          </div>
+          </div>
+          </div>
+          </div>
+        </div>
+          <!--Buttons-->
+          <div>
+          <button class="btn btn-lg btn-primary" type="submit" id="locationBtn">
+            Get weather⛅
+          </button>
+          <button class="btn btn-lg btn-light" type="submit" id="favoriteBtn" style="width: 36%;">
+            ⭐
+          </button>
+          <button class="btn btn-lg btn-warning" type="submit" id="unFavoriteBtn">❌</button>
+        </div>
+          <!------------------->
+          <div class="row text-white m-2" style="
+          background: rgba(0, 0, 0, 0.1);
+          ">
+            <p class="h5">Lastest saved location</p>
+          <ul id="favoriteList"></ul>
+          </div>
+          <!--Time-->
+          <div class="row text-white h5 p-1">
+            <p class="col">Time:</p>
+            <p class="col" id="time"></p>
+            <p class="col">Date:</p>
+            <p class="col text-nowrap" id="date"></p>
+          </div>
+          <!------------------->
+          <div class="card d-flex flex-row bg-transparent text-center"
+          style="height: 5em;"
+          >
+            <div class="card mx-auto bg-transparent text-white w-100">
+              <p class="card-title h5" style="margin: 0;">Day 1</p>
+              <p class="card-body h5" id="day1temp"></p>
+            </div>
+            <div class="card mx-auto bg-transparent text-white w-100">
+              <p class="card-title h5" style="margin: 0;">Day 2</p>
+              <p class="card-body h5" id="day2temp"></p>
+            </div>
+            <div class="card mx-auto bg-transparent text-white w-100">
+              <p class="card-title h5" style="margin: 0;">Day 3</p>
+              <p class="card-body h5" id="day3temp"></p>
+            </div>
+            <div class="card mx-auto bg-transparent text-white w-100">
+              <p class="card-title h5" style="margin: 0;">Day 4</p>
+              <p class="card-body h5" id="day4temp"></p>
+            </div>
+            <div class="card mx-auto bg-transparent text-white w-100">
+              <p class="card-title h5" style="margin: 0;">Day 5</p>
+              <p class="card-body h5" id="day5temp"></p>
+            </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

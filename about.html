@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/bootstrap.css" />
+  </head>
+  <body>
+<div
+      class="bg-image d-flex justify-content-center align-items-center"
+      style="
+        background-image: url('background.jpg');
+        background-size: cover;
+        background-position: center;
+        height: 100vh;
+      "
+    >
+      <div class="container shadow" style="width: 400px">
+        <div class="row justify-content-center">
+          <h1
+            class="display-5 text-center text-white text-decoration-underline"
+            style="margin: 0;"
+          >
+            Weather App
+            <small class="text-muted">- About</small>
+          </h1>
+          <div class="navbar navbar-expand">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item active">
+                <a class="nav-link text-white" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-white" href="about.html">About</a>
+              </li>
+            </ul>
+          </div>
+          <p class="h4 text-white p-2 text-center">Welcome to my <a class="text-white" href="index.html">Weather App</a> using openweathermap 
+            <hr class="text-white"><p class="text-white">- Johannes</p>
+          <div class="row text-white h5 p-2">
+            <p class="col">Time:</p>
+            <p class="col" id="time"></p>
+            <p class="col">Date:</p>
+            <p class="col text-nowrap" id="date"></p>
+          </div>
+    <script src="about.js"></script>
+  </body>
+</html>
